@@ -1,0 +1,61 @@
+#editor {
+    margin-top: 2rem;
+    height: 32rem;
+    border-radius: 0.5rem;
+    background-color: #000d18;
+    font-size: 1.2rem;
+}
+
+.ace_line {
+    font-family: monospace !important;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playground-section {
+    margin: 8rem 4rem 2rem 4rem;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+    #editor {
+        /* width: 80%; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #editor {
+        /* width: 90%; */
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #editor {
+        /* width: 100%; */
+        font-size: 1rem;
+        height: 15rem;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #editor {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #editor {
+        height: 10rem;
+    }
+}

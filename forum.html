@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/style02.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Програмски језик Ћ</title>
+    </head>
+    <body>
+        <body>
+            <div class="container">
+                <nav class="nav">
+                    <div class="logo-left">
+                        <img class="logo" src="images/logo.png" alt="" />
+                    </div>
+                    <div class="right-wrapper">
+                        <div class="middle">
+                            <ul>
+                                <a href="index.html">
+                                    <li>Почетна</li>
+                                </a>
+                                <a href="forum.html">
+                                    <li>Форум</li>
+                                </a>
+                                <a href="playground.html">
+                                    <li>Игралиште</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div class="button-right">
+                            <button class="nav-button">
+                                <a href="installation.html">Инсталирај</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <div class="line first"></div>
+                        <div class="line second"></div>
+                        <div class="line third"></div>
+                    </div>
+                </nav>
+                <form action="" class="post-form">
+                    <div class="info-data">
+                        <input
+                            class="title-of-post"
+                            type="text"
+                            placeholder="Наслов објаве"
+                        />
+                        <div class="checkbox-wrapper">
+                            <input id="check" type="checkbox" checked />
+                            <label for="">Издвојено</label>
+                        </div>
+                        <select name="kategorija" class="category">
+                            <option value="" disabled selected hidden>
+                                Категорија
+                                <img src="images/sleectarrow.png" alt="" />
+                            </option>
+                            <option value="Русија">Русија</option>
+                            <option value="Украјина">Украјина</option>
+                            <option value="Песак">Песак</option>
+                        </select>
+                    </div>
+                    <textarea
+                        name=""
+                        id="textarea"
+                        placeholder="Садржај објаве"
+                    ></textarea>
+                    <button class="publish-button button">Објави</button>
+                </form>
+
+                <div class="info-wrapper"></div>
+            </div>
+            <script src="Post.js"></script>
+            <script src="script.js"></script>
+            <script src="nav.js"></script>
+        </body>
+    </body>
+</html>

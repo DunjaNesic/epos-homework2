@@ -1,0 +1,77 @@
+.section{
+    margin: 8rem 4rem 3rem 4rem;
+}
+
+h2{
+    color: #DCE0E6;
+}
+
+.install-wrapp{
+    margin-top: 3rem;
+}
+
+.install-wrapp p{
+    margin: 1.5rem 0rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.for-linux{
+    margin: 1.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.for-linux .first{
+    width: 50%;
+    align-self: center;
+}
+
+.for-linux .second{
+    width: 70%;
+    align-self: center;
+}
+
+.other-ways{
+    margin-top: 3rem;
+}
+
+.other-ways p{
+    margin: 1.5rem 0rem;
+}
+
+@media screen and (max-width: 880px) {
+   .buttons .nav-button{
+    padding: 0.5rem 0.5rem;
+   }
+        .for-linux .first {
+            width: 70%;
+        }
+}
+
+@media screen and (max-width: 620px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .for-linux .first{
+        width: 80%;
+    }
+    .for-linux .second{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .for-linux .first {
+        width: 100%;
+    }
+
+    .for-linux .second {
+        width: 100%;
+    }
+}

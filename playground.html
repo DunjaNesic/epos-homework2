@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style03.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.13.1/ace.js"></script>
+        <title>Програмски језик Ћ</title>
+    </head>
+
+    <body>
+        <nav class="nav">
+            <div class="logo-left">
+                <img class="logo" src="images/logo.png" alt="" />
+            </div>
+            <div class="right-wrapper">
+                <div class="middle">
+                    <ul>
+                        <a href="index.html">
+                            <li>Почетна</li>
+                        </a>
+                        <a href="forum.html">
+                            <li>Форум</li>
+                        </a>
+                        <a href="playground.html">
+                            <li>Игралиште</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="button-right">
+                    <button class="nav-button">
+                        <a href="installation.html">Инсталирај</a>
+                    </button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line first"></div>
+                <div class="line second"></div>
+                <div class="line third"></div>
+            </div>
+        </nav>
+
+        <div class="playground-section">
+            <div class="buttons">
+                <button class="nav-button">Покрени</button>
+                <div class="right-buttons">
+                    <button class="nav-button">Подели</button>
+                    <button class="nav-button">Помоћ</button>
+                </div>
+            </div>
+            <div id="editor">укључи<стдуи.з><br />
+
+број главна(){<br />
+    број а = 42;<br />
+    текст б = "Одговор на Универзум је ";<br />
+    испиши(б+а);<br />
+    врати 0;<br />
+}
+</div>
+        </div>
+
+        <script>
+            var editor = ace.edit("editor");
+            editor.setTheme("ace/theme/dracula");
+            editor.session.setMode("ace/mode/javascript");
+        </script>
+    </body>
+
+    <script src="nav.js"></script>
+</html>

@@ -1,0 +1,376 @@
+:root {
+    --background-color: #011a31;
+    --post-color: #023462;
+    --button-color: #076ae1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+html {
+    /* font-size: 62.5%; */
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 100vw;
+    /* margin: auto; */
+}
+
+.header {
+    width: 100vw;
+    height: 6rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    height: 4rem;
+    object-fit: cover;
+}
+
+.logo-wrapper h3 {
+    padding: 1rem;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #011a31;
+    width: 100vw;
+    padding: 0rem 4rem;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 100399;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation-list li {
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.install-button {
+    color: #dce0e6;
+    background-color: #076ae1;
+    cursor: pointer;
+    border: 2px solid #076ae1;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.post-form {
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category {
+    min-width: 200px;
+}
+
+.title-of-post {
+    min-width: 320px;
+}
+
+.info-data {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title-of-post {
+    width: 60%;
+    background-color: var(--background-color);
+    border: 6px solid var(--post-color);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.5rem;
+    /* padding: 0 3rem; */
+    font-size: 1.5rem;
+    color: #b6b6b6;
+    /* margin-right: 7rem; */
+    outline: none;
+}
+.checkbox-wrapper {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.checkbox-wrapper > label {
+    font-size: 1.5rem;
+}
+
+.checkbox-wrapper input {
+    margin: 0 1rem;
+    accent-color: #fff;
+}
+
+.category {
+    width: 20%;
+    background-color: var(--background-color);
+    border: 6px solid var(--post-color);
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    color: #b6b6b6;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) calc(1em - 10px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0;
+    appearance: none;
+}
+
+.category option {
+    color: #b6b6b6;
+}
+#textarea {
+    width: 90%;
+    height: 20rem;
+    background-color: var(--background-color);
+    border: 6px solid var(--post-color);
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: #b6b6b6;
+    outline: none;
+    resize: none;
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+}
+
+.publish-button {
+    color: #dce0e6;
+    background-color: #076ae1;
+    cursor: pointer;
+    border: 2px solid #076ae1;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+.post-wrapper {
+    background-color: var(--post-color);
+    padding: 2rem;
+    display: flex;
+    border-radius: 1.2rem;
+}
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4rem;
+}
+
+.pinned-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.pinned-wrapper > h1 {
+    padding-left: 2rem;
+}
+.poster {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.poster p {
+    padding: 0 1.5rem;
+}
+.inner-text {
+    font-weight: 400;
+    padding: 1rem;
+    overflow-wrap: break-word;
+}
+.personal-info {
+    width: 70%;
+    border-right: 3px solid #fff;
+}
+.answers {
+    width: 15%;
+    text-align: center;
+    justify-content: space-between;
+    border-right: 3px solid #fff;
+}
+
+.answers p {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+.views {
+    width: 15%;
+    text-align: center;
+}
+
+.views p {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+.readMoreBtn {
+    border: none;
+    background-color: var(--post-color);
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.second-part {
+    display: none;
+}
+.answer {
+    color: #dce0e6;
+    background-color: #076ae1;
+    cursor: pointer;
+    border: 2px solid #076ae1;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.comment {
+    margin-top: 2rem;
+    display: none;
+    width: 50%;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 1.2rem;
+    background-color: var(--post-color);
+    transform: translateX(50%);
+}
+.data-wrapper {
+    margin-bottom: 70px;
+}
+
+.comment > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.comment > form > input {
+    width: 70%;
+    height: 40%;
+    margin-right: 2rem;
+}
+
+.comment > form > button {
+    color: #dce0e6;
+    background-color: #076ae1;
+    cursor: pointer;
+    border: 2px solid #076ae1;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.comment-form input {
+    color: #000;
+}
+
+.post-title {
+    padding-left: 1rem;
+}
+
+.answers {
+    padding-right: 1rem;
+}
+
+.personal-info {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .answer {
+        font-size: 0.7rem;
+    }
+    .views h2 {
+        font-size: 1rem;
+    }
+    .answers h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .post-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .answers {
+        width: 100%;
+    }
+    .views {
+        width: 100%;
+    }
+    .personal-info {
+        border-right: none;
+    }
+
+    .answers {
+        border-right: none;
+    }
+    .button-right {
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .poster {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .personal-info {
+        width: 100%;
+    }
+}
