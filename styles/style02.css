@@ -358,9 +358,6 @@ html {
     .answers {
         border-right: none;
     }
-    .button-right {
-        margin-top: 0rem;
-    }
 }
 
 @media screen and (max-width: 650px) {
@@ -372,5 +369,8 @@ html {
     }
     .personal-info {
         width: 100%;
+    }
+    .info-wrapper{
+        margin: 0 1rem;
     }
 }
