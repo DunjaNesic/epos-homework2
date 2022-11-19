@@ -1,78 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style01.css">
-    <link rel="stylesheet" href="styles/global.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
-    <title>Програмски језик Ћ</title>
-</head>
-<body>
-
-    <nav class="nav">
-        <div class="logo-left">
-            <img class="logo" src="images/logo.png" alt="">
-        </div>
-        <div class="right-wrapper">
-            <div class="middle">
-                <ul>
-                    <a href="index.html">
-                        <li>Почетна</li>
-                    </a>
-                    <a href="forum.html"><li>Форум</li></a>
-                    <a href="playground.html">
-                        <li>Игралиште</li>
-                    </a>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style01.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <title>Програмски језик Ћ</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo-left">
+                <img class="logo" src="images/logo.png" alt="" />
             </div>
-    
-            <div class="button-right">
-                <button class="nav-button"><a href="installation.html">Инсталирај</a></button>
-    
+            <div class="right-wrapper">
+                <div class="middle">
+                    <ul>
+                        <a href="index.html">
+                            <li>Почетна</li>
+                        </a>
+                        <a href="forum.html"><li>Форум</li></a>
+                        <a href="playground.html">
+                            <li>Игралиште</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="button-right">
+                    <button class="nav-button">
+                        <a href="installation.html">Инсталирај</a>
+                    </button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line first"></div>
+                <div class="line second"></div>
+                <div class="line third"></div>
+            </div>
+        </nav>
+
+        <div class="section">
+            <h1>Инсталација језика Ћ</h1>
+
+            <div class="install-wrapp">
+                <h2>Користећи ћинсталер</h2>
+                <p>
+                    Уколико користите <strong>Windows</strong> оперативни систем
+                    најлакша опција јесте да преузмете ћинсталер користећи линк
+                    испод:
+                </p>
+                <div class="buttons">
+                    <button
+                        class="nav-button"
+                        onclick="alert('Преузимање ћинсталера')"
+                    >
+                        Преузми ћинсталер-стабилан.exe
+                    </button>
+                    <button
+                        class="nav-button"
+                        onclick="alert('Преузимање ћинсталера')"
+                    >
+                        Преузми ћинсталер-ноћни.exe
+                    </button>
+                </div>
+            </div>
+
+            <div class="for-linux">
+                <p>
+                    За <strong>Linux</strong> системе, у зависности од система
+                    за управљање пакетима, могуће је користити једну од следећих
+                    команди:
+                </p>
+                <img class="first" src="images/linux01.png" alt="" />
+                <p>
+                    Инсталацију је могуће извршити и употребом команде
+                    <strong>curl</strong>:
+                </p>
+                <img class="second" src="images/linux02.png" alt="" />
+                <p>
+                    За све проблеме и недоумице везано за инсталацију помоћ је
+                    могуће пронаћи на
+                    <strong>званичном форуму језика Ћ</strong>:
+                </p>
+            </div>
+            <button class="nav-button"><a href="forum.html">Ћ Форум</a></button>
+
+            <div class="other-ways">
+                <h2>Остали начини</h2>
+                <p>
+                    Инсталација описана изнад, користећи ћинсталер, јесте
+                    препоручени начин инсталације програмског језика Ћ. Међутим,
+                    Ћ може бити инсталиран и на друге начине, описане у линку
+                    испод:
+                </p>
+                <button
+                    class="nav-button"
+                    onclick="alert('Одлазак на другу страницу')"
+                >
+                    Остали начини инсталације
+                </button>
             </div>
         </div>
-        <div class="hamburger">
-            <div class="line first"></div>
-            <div class="line second"></div>
-            <div class="line third"></div>
-        </div>
-    </nav>
 
-    <div class="section">
-
-        <h1>Инсталација језика Ћ</h1>
-
-        <div class="install-wrapp">
-            <h2>Користећи ћинсталер</h2>
-            <p>Уколико користите <strong>Windows</strong>  оперативни систем најлакша опција јесте да преузмете ћинсталер користећи линк испод:</p>
-            <div class="buttons">
-                <button class="nav-button">Преузми ћинсталер-стабилан.exe</button>
-                <button class="nav-button">Преузми ћинсталер-ноћни.exe</button>
-            </div>
-        </div>
-
-        <div class="for-linux">
-            <p>За <strong>Linux</strong> системе, у зависности од система за управљање пакетима, могуће је користити једну од следећих команди:</p>
-            <img class="first" src="images/linux01.png" alt="">
-            <p>Инсталацију је могуће извршити и употребом команде  <strong>curl</strong>:</p>
-            <img class="second" src="images/linux02.png" alt="">
-            <p>За све проблеме и недоумице везано за инсталацију помоћ је могуће пронаћи на <strong>званичном форуму језика Ћ</strong>:</p>
-        </div>
-        <button class="nav-button"><a href="forum.html">Ћ Форум</a>
-        </button>
-
-        <div class="other-ways">
-            <h2>Остали начини</h2>
-            <p>Инсталација описана изнад, користећи ћинсталер, јесте препоручени начин инсталације програмског језика Ћ.
-            Међутим, Ћ може бити инсталиран и на друге начине, описане у линку испод:</p>
-            <button class="nav-button">Остали начини инсталације</button>
-        </div>
-
-    </div>
-
-<script src="nav.js"></script>
-    
-</body>
+        <script src="nav.js"></script>
+    </body>
 </html>
