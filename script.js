@@ -40,7 +40,7 @@ function createPost() {
             <p>Категорија: ${post.category}</p>
           </div>
           <p class="inner-text">
-            ${post.post_content}
+            ${content}
           </p>
         </div>
         <div class="answers">
@@ -67,7 +67,6 @@ function createPost() {
         <div class = "post-wrapper" data-post-id = "${post.id}">
         <div class="personal-info">
           <div class="pinned-wrapper">
-            <img src="images/pinned.png" alt="" />
             <h1 class="post-title">${post.title}</h1>
           </div>
           <div class="poster">
@@ -78,7 +77,7 @@ function createPost() {
             <p>Категорија: ${post.category}</p>
           </div>
           <p class="inner-text">
-            ${post.post_content}
+            ${content}
           </p>
         </div>
         <div class="answers">
@@ -110,9 +109,9 @@ document.querySelector(".post-form").addEventListener("submit", (event) => {
 
 let modifyContent = (content) => {
     let words = content.split(" ");
-
+    console.log(content);
     if (words.length > 15) {
-        let text1 = content;
+        let text1 = content.substring(0, content.indexOf(words[15]));
         let text2 = content.substring(content.indexOf(words[15]));
         return (
             text1 +
@@ -151,8 +150,6 @@ async function getAllPosts() {
     allPosts.forEach((post) => {
         let words = post.post_content.split(" ");
         let content = post.post_content;
-        console.log(post.post_content);
-
         let html = document.querySelector(".info-wrapper").innerHTML;
 
         if (post.pinned === true) {
@@ -196,7 +193,6 @@ async function getAllPosts() {
         <div class = "post-wrapper" data-post-id = "${post.id}">
         <div class="personal-info">
           <div class="pinned-wrapper">
-            <img src="images/pinned.png" alt="" />
             <h1 class="post-title">${post.title}</h1>
           </div>
           <div class="poster">
