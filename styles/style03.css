@@ -25,23 +25,10 @@
     gap: 2rem;
 }
 
-@media screen and (max-width: 920px) {
-    #editor {
-        /* width: 80%; */
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #editor {
-        /* width: 90%; */
-    }
-}
 
 @media screen and (max-width: 640px) {
     #editor {
-        /* width: 100%; */
         font-size: 1rem;
-        height: 15rem;
     }
     .buttons {
         flex-direction: column;
