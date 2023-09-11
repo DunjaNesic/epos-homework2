@@ -34,6 +34,7 @@ class Post{
         .then(data =>{
 
         })
+        localStorage.setItem("data", data);
     }
 
     async getAllPosts(){
